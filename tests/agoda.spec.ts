@@ -1,4 +1,4 @@
-import { test } from '@playwright/test';
+import { test, expect } from '@playwright/test';
 import { AgodaPage } from '../pages/AgodaPage';
 import { TestData } from '../data/TestData';
 
@@ -21,29 +21,19 @@ test('Agoda - Search and validate URL data', async ({ page }) => {
   await newPage.waitForLoadState('domcontentloaded');
   const newUrl = newPage.url();
 
-  if (newUrl.includes(`checkIn=${TestData.checkInDate}`)) {
-    console.log(' ✓ Check-in date verified in URL');
-  } else {
-    console.log('Check-in date not found');
-  }
+  // ✅ Replacing if/else with Playwright assertions:
+  expect(newUrl).toContain(`checkIn=${TestData.checkInDate}`);
+  console.log('✓ Check-in date verified in URL');
 
-  if (newUrl.includes(`checkOut=${TestData.checkOutDate}`)) {
-    console.log(' ✓ Check-out date verified in URL');
-  } else {
-    console.log('Check-out date not found');
-  }
+  expect(newUrl).toContain(`checkOut=${TestData.checkOutDate}`);
+  console.log('✓ Check-out date verified in URL');
 
-  if (newUrl.toLowerCase().includes(TestData.location.toLowerCase())) {
-    console.log(' ✓ Location verified in URL');
-  } else {
-    console.log('Location not found in URL');
-  }
+  expect(newUrl.toLowerCase()).toContain(TestData.location.toLowerCase());
+  console.log('✓ Location verified in URL');
 
-  if (newUrl.includes('adults=2') && newUrl.includes('children=1')) {
-    console.log(' ✓ Travelers info verified in URL');
-  } else {
-    console.log('Travelers info NOT found in URL');
-  }
+  expect(newUrl).toContain('adults=2');
+  expect(newUrl).toContain('children=1');
+  console.log('✓ Travelers info verified in URL');
 
   await newPage.pause();
 });
