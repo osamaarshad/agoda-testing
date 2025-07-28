@@ -15,11 +15,13 @@ export default defineConfig({
 
   
   use: {
-    baseURL: 'https://www.airbnb.com',
-    headless: false,          // Run tests in headless mode (without a browser UI)
-    browserName: 'chromium', // Use Chromium browser for tests
-            // Generate HTML report after tests run
-  },
+  baseURL: 'https://www.agoda.com',
+  headless: true,
+  browserName: 'chromium',
+  viewport: { width: 1280, height: 720 },
+  screenshot: 'only-on-failure', // Take screenshots when tests fail
+},
+
  
 });
 
