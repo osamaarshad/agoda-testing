@@ -1,21 +1,26 @@
-name: Run Playwright Tests
+name: Run Playwright Tests in Parallel with Allure
 
 on:
   push:
     branches: [ main, agodatatesting ]
   pull_request:
     branches: [ main, agodatatesting ]
+  workflow_dispatch: # Allow manual trigger
 
 jobs:
-  test:
+  e2e-tests:
+    strategy:
+      fail-fast: false
+      matrix:
+        shard: [1, 2, 3] # Number of parallel shards
     runs-on: ubuntu-latest
 
     steps:
       - name: 🧾 Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: 🟢 Set up Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
           node-version: 18
 
@@ -25,12 +30,33 @@ jobs:
       - name: 📥 Install Playwright Browsers
         run: npx playwright install --with-deps
 
-      - name: 🚀 Run Playwright tests
-        run: npx playwright test
+      - name: 🚀 Run Playwright tests (Shard ${{ matrix.shard }})
+        run: npx playwright test --shard=${{ matrix.shard }}/3 --reporter=line,allure-playwright
 
-      - name: 📤 Upload Playwright HTML Report
+      - name: 📤 Upload Allure Results
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: playwright-report
-          path: playwright-report
+          name: allure-results-shard-${{ matrix.shard }}
+          path: allure-results
+
+  generate-report:
+    needs: e2e-tests
+    runs-on: ubuntu-latest
+    steps:
+      - name: ⬇️ Download Allure Results
+        uses: actions/download-artifact@v4
+        with:
+          path: allure-results
+          merge-multiple: true
+
+      - name: 📊 Generate Allure Report
+        run: |
+          npm install -g allure-commandline
+          allure generate allure-results --clean -o allure-report
+
+      - name: 📤 Upload Allure HTML Report
+        uses: actions/upload-artifact@v4
+        with:
+          name: allure-report
+          path: allure-report

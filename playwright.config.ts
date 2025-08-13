@@ -11,12 +11,15 @@ export default defineConfig({
   expect:{
     timeout:5000
   },
-  reporter: 'html',
+  reporter: [
+  ['line'],
+  ['allure-playwright']
+],
 
   
   use: {
   baseURL: 'https://www.agoda.com',
-  headless: true,
+  headless: false,
   browserName: 'chromium',
   viewport: { width: 1280, height: 720 },
   screenshot: 'only-on-failure', // Take screenshots when tests fail

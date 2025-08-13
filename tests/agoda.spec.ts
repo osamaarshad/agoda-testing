@@ -20,8 +20,7 @@ test('Agoda - Search and validate URL data', async ({ page }) => {
 
   await newPage.waitForLoadState('domcontentloaded');
   const newUrl = newPage.url();
-
-  // ✅ Replacing if/else with Playwright assertions:
+//assertions
   expect(newUrl).toContain(`checkIn=${TestData.checkInDate}`);
   console.log('✓ Check-in date verified in URL');
 
