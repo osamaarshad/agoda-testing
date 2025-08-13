@@ -1,0 +1,2 @@
+ Clicked on: Lahore
+ Search box value: Lahore
