@@ -19,7 +19,7 @@ export default defineConfig({
   
   use: {
   baseURL: 'https://www.agoda.com',
-  headless: false,
+  headless: true,
   browserName: 'chromium',
   viewport: { width: 1280, height: 720 },
   screenshot: 'only-on-failure', // Take screenshots when tests fail
