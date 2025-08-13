@@ -1,0 +1,9 @@
+ Clicked on: Lahore
+ Search box value: Lahore
+✓ Check-in: 29 Aug 2025
+✓ Check-out: 30 Aug 2025
+✓ Travelers info: 2 adults,1 child
+✓ Check-in date verified in URL
+✓ Check-out date verified in URL
+✓ Location verified in URL
+✓ Travelers info verified in URL

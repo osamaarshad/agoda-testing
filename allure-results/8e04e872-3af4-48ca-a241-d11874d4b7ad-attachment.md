@@ -1,0 +1,358 @@
+# Page snapshot
+
+```yaml
+- banner
+- main:
+  - navigation:
+    - link "Agoda logo Home link":
+      - /url: /?cid=1908612
+      - img "Primary Logo"
+      - img "Site secondary logo"
+    - text: Bundle and save!
+    - link "Flight + Hotel":
+      - /url: /packages?cid=1908612
+    - link "Hotels & Homes":
+      - /url: /?cid=1908612
+    - text: New! Transport
+    - link "Activities":
+      - /url: /activities?cid=1908612
+    - link "Coupons & Deals":
+      - /url: /deals?cid=1908612
+    - link "eSIM":
+      - /url: /clickouts/esim?source=desktop&medium=1908612&campaign=header_esim_link&currency=PKR&cid=1908612
+    - link "Travel Guides":
+      - /url: /travel-guides
+    - link "Travel Itineraries":
+      - /url: /traveltips/
+  - button "Shopping cart"
+  - button:
+    - img
+  - paragraph:
+    - combobox "Search by city or activity": Lahore
+  - tablist "categories-tabs":
+    - tab "All (93)" [selected]:
+      - paragraph: All (93)
+    - tab "Tours (87)":
+      - paragraph: Tours (87)
+    - tab "Food (7)":
+      - paragraph: Food (7)
+    - tab "Transportation (3)":
+      - paragraph: Transportation (3)
+    - tab "Experiences (2)":
+      - paragraph: Experiences (2)
+    - tab "Attractions (1)":
+      - paragraph: Attractions (1)
+    - tab "Sim & Wifi (1)":
+      - paragraph: Sim & Wifi (1)
+    - tab "Travel Essentials (0)":
+      - paragraph: Travel Essentials (0)
+  - heading "Sort" [level=3]
+  - radiogroup "Sort":
+    - radio "Popular" [checked]
+    - paragraph: Popular
+    - radio "Lowest price first"
+    - paragraph: Lowest price first
+    - radio "Highest rating first"
+    - paragraph: Highest rating first
+  - heading "Price" [level=3]
+  - paragraph: PKR 0
+  - paragraph: PKR 2,631,875
+  - slider "Minimum price": "0"
+  - slider "Maximum price": "2631875"
+  - heading "Star rating" [level=3]
+  - group "Star rating":
+    - checkbox "5 stars rating"
+    - text: 5 stars rating
+    - checkbox "4 stars rating"
+    - text: 4 stars rating
+    - checkbox "3 stars rating"
+    - text: 3 stars rating
+    - checkbox "2 stars rating"
+    - text: 2 stars rating
+    - checkbox "1 stars rating"
+    - text: 1 stars rating
+    - checkbox "No rating"
+    - paragraph: No rating
+  - heading "Booking features" [level=3]
+  - group "Booking features":
+    - checkbox "Free cancellation"
+    - paragraph: Free cancellation
+    - checkbox "Instant confirmation"
+    - paragraph: Instant confirmation
+  - heading "Duration" [level=3]
+  - group "Duration":
+    - checkbox "Up to 1 hour"
+    - paragraph: Up to 1 hour
+    - checkbox "1-4 hours"
+    - paragraph: 1-4 hours
+    - checkbox "More than 4 hours"
+    - paragraph: More than 4 hours
+  - heading "Categories" [level=3]:
+    - button "Categories" [expanded]:
+      - heading "Categories" [level=3]
+  - region "Categories":
+    - radio "All" [checked]
+    - paragraph: All
+    - paragraph: (93)
+    - separator
+    - radio "Tours"
+    - paragraph: Tours
+    - paragraph: (87)
+    - separator
+    - radio "Food & Drinks"
+    - paragraph: Food & Drinks
+    - paragraph: (7)
+    - separator
+    - radio "Transportation"
+    - paragraph: Transportation
+    - paragraph: (3)
+    - separator
+    - radio "Experiences"
+    - paragraph: Experiences
+    - paragraph: (2)
+    - separator
+    - radio "Attractions"
+    - paragraph: Attractions
+    - paragraph: (1)
+    - separator
+    - radio "Sim & Wifi"
+    - paragraph: Sim & Wifi
+    - paragraph: (1)
+    - separator
+    - radio "Travel Essentials"
+    - paragraph: Travel Essentials
+    - paragraph: Luggage storage, Fast track, etc.
+    - paragraph: (0)
+    - separator
+  - link "Private Lahore Full Day Sightseeing Tour Star rating 5.0 (15) Checked Free cancellation 13% off PKR 28,290 PKR 24,669":
+    - /url: /activities/detail?activityId=1437415&cityId=2298&cid=1908612
+    - heading "Private Lahore Full Day Sightseeing Tour" [level=3]
+    - text: Star rating
+    - paragraph: "5.0"
+    - text: (15)
+    - img "Checked"
+    - text: Free cancellation 13% off PKR 28,290 PKR 24,669
+  - 'link "Chauffeur: Lahore International Airport Transfer - Arrival Star rating 5.0 (1) Checked Free cancellation 24% off PKR 12,731 PKR 9,739"':
+    - /url: /activities/detail?activityId=791485&cityId=2298&cid=1908612
+    - 'heading "Chauffeur: Lahore International Airport Transfer - Arrival" [level=3]'
+    - text: Star rating
+    - paragraph: "5.0"
+    - text: (1)
+    - img "Checked"
+    - text: Free cancellation 24% off PKR 12,731 PKR 9,739
+  - link "Lahore Big Bus City Tour Star rating 5.0 (1) Checked 34% off PKR 11,316 PKR 7,492":
+    - /url: /activities/detail?activityId=741894&cityId=2298&cid=1908612
+    - heading "Lahore Big Bus City Tour" [level=3]
+    - text: Star rating
+    - paragraph: "5.0"
+    - text: (1)
+    - img "Checked"
+    - text: 34% off PKR 11,316 PKR 7,492
+  - link "Airport Transfer Checked Free cancellation 24% off PKR 16,974 PKR 12,985":
+    - /url: /activities/detail?activityId=841136&cityId=2298&cid=1908612
+    - heading "Airport Transfer" [level=3]
+    - img "Checked"
+    - text: Free cancellation 24% off PKR 16,974 PKR 12,985
+  - 'link "Chauffeur: Lahore International Airport Transfer - Departure Star rating 5.0 (1) Checked Free cancellation 24% off PKR 12,731 PKR 9,739"':
+    - /url: /activities/detail?activityId=748441&cityId=2298&cid=1908612
+    - 'heading "Chauffeur: Lahore International Airport Transfer - Departure" [level=3]'
+    - text: Star rating
+    - paragraph: "5.0"
+    - text: (1)
+    - img "Checked"
+    - text: Free cancellation 24% off PKR 12,731 PKR 9,739
+  - link "Best seller Pakistan Data eSIM 0.5GB daily to 50GB 30 Days Checked 46% off PKR 901 PKR 484":
+    - /url: /activities/detail?activityId=1389267&cityId=2298&cid=1908612
+    - text: Best seller
+    - heading "Pakistan Data eSIM 0.5GB daily to 50GB 30 Days" [level=3]
+    - img "Checked"
+    - text: 46% off PKR 901 PKR 484
+  - link "Lahore City Full Day Sightseeing Guided Tour VIP Checked Free cancellation 14% off PKR 93,355 PKR 80,472":
+    - /url: /activities/detail?activityId=1449443&cityId=2298&cid=1908612
+    - heading "Lahore City Full Day Sightseeing Guided Tour VIP" [level=3]
+    - img "Checked"
+    - text: Free cancellation 14% off PKR 93,355 PKR 80,472
+  - link "2 Days Private Guided Tour in Lahore Star rating 5.0 (36) Checked Free cancellation 32% off PKR 84,869 PKR 57,880":
+    - /url: /activities/detail?activityId=1130218&cityId=2298&cid=1908612
+    - heading "2 Days Private Guided Tour in Lahore" [level=3]
+    - text: Star rating
+    - paragraph: "5.0"
+    - text: (36)
+    - img "Checked"
+    - text: Free cancellation 32% off PKR 84,869 PKR 57,880
+  - link "Full Day Private Guided Lahore Sightseeing Tour Checked Free cancellation 13% off PKR 26,875 PKR 23,435":
+    - /url: /activities/detail?activityId=1247849&cityId=2298&cid=1908612
+    - heading "Full Day Private Guided Lahore Sightseeing Tour" [level=3]
+    - img "Checked"
+    - text: Free cancellation 13% off PKR 26,875 PKR 23,435
+  - link "Rangeela Rickshaw Walled City Lahore Guided Tour Star rating 4.9 (19) Checked Free cancellation 33% off PKR 31,119 PKR 20,912":
+    - /url: /activities/detail?activityId=812583&cityId=2298&cid=1908612
+    - heading "Rangeela Rickshaw Walled City Lahore Guided Tour" [level=3]
+    - text: Star rating
+    - paragraph: "4.9"
+    - text: (19)
+    - img "Checked"
+    - text: Free cancellation 33% off PKR 31,119 PKR 20,912
+  - link "Best seller Private Lahore Full Day Sightseeing Tour with Local Guide Star rating 5.0 (1) Checked Free cancellation 34% off PKR 33,948 PKR 22,474":
+    - /url: /activities/detail?activityId=1197080&cityId=2298&cid=1908612
+    - text: Best seller
+    - heading "Private Lahore Full Day Sightseeing Tour with Local Guide" [level=3]
+    - text: Star rating
+    - paragraph: "5.0"
+    - text: (1)
+    - img "Checked"
+    - text: Free cancellation 34% off PKR 33,948 PKR 22,474
+  - link "Private Guided Lahore City Full Day Tour Star rating 5.0 (3) Checked Free cancellation 34% off PKR 42,435 PKR 28,092":
+    - /url: /activities/detail?activityId=1280770&cityId=2298&cid=1908612
+    - heading "Private Guided Lahore City Full Day Tour" [level=3]
+    - text: Star rating
+    - paragraph: "5.0"
+    - text: (3)
+    - img "Checked"
+    - text: Free cancellation 34% off PKR 42,435 PKR 28,092
+  - link "Khewra Salt Mines & Katas Raj Temple One Day Guided Tour Star rating 5.0 (1) Checked Free cancellation 17% off PKR 65,066 PKR 54,135":
+    - /url: /activities/detail?activityId=938668&cityId=2298&cid=1908612
+    - heading "Khewra Salt Mines & Katas Raj Temple One Day Guided Tour" [level=3]
+    - text: Star rating
+    - paragraph: "5.0"
+    - text: (1)
+    - img "Checked"
+    - text: Free cancellation 17% off PKR 65,066 PKR 54,135
+  - link "Rangeela Rikshaw Walled City Guided Tour Lahore Star rating 5.0 (27) Checked Free cancellation 34% off PKR 31,119 PKR 20,601":
+    - /url: /activities/detail?activityId=1107443&cityId=2298&cid=1908612
+    - heading "Rangeela Rikshaw Walled City Guided Tour Lahore" [level=3]
+    - text: Star rating
+    - paragraph: "5.0"
+    - text: (27)
+    - img "Checked"
+    - text: Free cancellation 34% off PKR 31,119 PKR 20,601
+  - link "Lahore Heritage in a Day Star rating 5.0 (24) Checked Free cancellation 19% off PKR 31,119 PKR 25,269":
+    - /url: /activities/detail?activityId=1426726&cityId=2298&cid=1908612
+    - heading "Lahore Heritage in a Day" [level=3]
+    - text: Star rating
+    - paragraph: "5.0"
+    - text: (24)
+    - img "Checked"
+    - text: Free cancellation 19% off PKR 31,119 PKR 25,269
+  - link "Shalimar Garden Private Tour and Wahga Border Flag Ceremony Star rating 5.0 (1) Checked Free cancellation 13% off PKR 28,290 PKR 24,669":
+    - /url: /activities/detail?activityId=1440521&cityId=2298&cid=1908612
+    - heading "Shalimar Garden Private Tour and Wahga Border Flag Ceremony" [level=3]
+    - text: Star rating
+    - paragraph: "5.0"
+    - text: (1)
+    - img "Checked"
+    - text: Free cancellation 13% off PKR 28,290 PKR 24,669
+  - link "Private Lahore Full Day Sightseeing Tour Star rating 4.9 (38) Checked Free cancellation 34% off PKR 41,020 PKR 27,155":
+    - /url: /activities/detail?activityId=1104972&cityId=2298&cid=1908612
+    - heading "Private Lahore Full Day Sightseeing Tour" [level=3]
+    - text: Star rating
+    - paragraph: "4.9"
+    - text: (38)
+    - img "Checked"
+    - text: Free cancellation 34% off PKR 41,020 PKR 27,155
+  - 'link "From Lahore: Katas Raj Temple, Khewra Salt Mines & Kalar Kahar Day Trip Star rating 4.8 (7) Checked Free cancellation 13% off PKR 99,013 PKR 86,340"':
+    - /url: /activities/detail?activityId=907886&cityId=2298&cid=1908612
+    - 'heading "From Lahore: Katas Raj Temple, Khewra Salt Mines & Kalar Kahar Day Trip" [level=3]'
+    - text: Star rating
+    - paragraph: "4.8"
+    - text: (7)
+    - img "Checked"
+    - text: Free cancellation 13% off PKR 99,013 PKR 86,340
+  - link "Lahore Guided Tour Checked Free cancellation 19% off PKR 26,522 PKR 21,536":
+    - /url: /activities/detail?activityId=864470&cityId=2298&cid=1908612
+    - heading "Lahore Guided Tour" [level=3]
+    - img "Checked"
+    - text: Free cancellation 19% off PKR 26,522 PKR 21,536
+  - link "Lahore Full Day Sightseeing Guided Tour Star rating 4.9 (155) Checked Free cancellation 21% off PKR 41,020 PKR 32,488":
+    - /url: /activities/detail?activityId=768238&cityId=2298&cid=1908612
+    - heading "Lahore Full Day Sightseeing Guided Tour" [level=3]
+    - text: Star rating
+    - paragraph: "4.9"
+    - text: (155)
+    - img "Checked"
+    - text: Free cancellation 21% off PKR 41,020 PKR 32,488
+  - link "Kartarpur-Guru-Nanak sab One Day Tour Star rating 5.0 (3) Checked Free cancellation 21% off PKR 84,869 PKR 67,216":
+    - /url: /activities/detail?activityId=749280&cityId=2298&cid=1908612
+    - heading "Kartarpur-Guru-Nanak sab One Day Tour" [level=3]
+    - text: Star rating
+    - paragraph: "5.0"
+    - text: (3)
+    - img "Checked"
+    - text: Free cancellation 21% off PKR 84,869 PKR 67,216
+  - link "10 Days Chitral Kalash valley Takht-i-Bahi Taxila Peshawar Star rating 5.0 (1) Checked Free cancellation 16% off PKR 424,341 PKR 357,295":
+    - /url: /activities/detail?activityId=875429&cityId=2298&cid=1908612
+    - heading "10 Days Chitral Kalash valley Takht-i-Bahi Taxila Peshawar" [level=3]
+    - text: Star rating
+    - paragraph: "5.0"
+    - text: (1)
+    - img "Checked"
+    - text: Free cancellation 16% off PKR 424,341 PKR 357,295
+  - link "Taste Of Lahore and Visit of Walled City Checked Free cancellation 13% off PKR 70,724 PKR 61,671":
+    - /url: /activities/detail?activityId=1484498&cityId=2298&cid=1908612
+    - heading "Taste Of Lahore and Visit of Walled City" [level=3]
+    - img "Checked"
+    - text: Free cancellation 13% off PKR 70,724 PKR 61,671
+  - link "Nankana Sahib Gurdwara One Day Guided Tour Star rating 5.0 (1) Checked Free cancellation 13% off PKR 42,435 PKR 37,003":
+    - /url: /activities/detail?activityId=1199849&cityId=2298&cid=1908612
+    - heading "Nankana Sahib Gurdwara One Day Guided Tour" [level=3]
+    - text: Star rating
+    - paragraph: "5.0"
+    - text: (1)
+    - img "Checked"
+    - text: Free cancellation 13% off PKR 42,435 PKR 37,003
+  - paragraph: Page 1 of 4
+  - button "Next"
+  - paragraph: Help
+  - link "Help center":
+    - /url: /info/contact.html
+  - link "FAQs":
+    - /url: /info/contact.html
+  - link "Privacy policy":
+    - /url: /info/privacy.html
+  - link "Cookie policy":
+    - /url: /info/privacy.html#cookies
+  - link "Terms of use":
+    - /url: /info/termsofuse.html
+  - link "Manage cookie settings":
+    - /url: /privacy-settings
+  - link "Digital Services Act (EU)":
+    - /url: /info/eu-digital-services-act.html
+  - link "Content guidelines & reporting":
+    - /url: /info/eu-digital-services-act.html#CM
+  - link "Modern Slavery Statement":
+    - /url: //www.bookingholdings.com/modern-slavery-statement/
+  - paragraph: Company
+  - link "About us":
+    - /url: /about-agoda
+  - link "Careers":
+    - /url: //careersatagoda.com
+  - link "Press":
+    - /url: //mediaroom.agoda.com
+  - link "Blog":
+    - /url: /blog
+  - link "PointsMAX":
+    - /url: //www.agoda.com/pointsmax.html
+  - paragraph: Destinations
+  - link "Countries/Territories":
+    - /url: //www.agoda.com/world.html
+  - link "All Flight Routes":
+    - /url: //www.agoda.com/flights/world.html
+  - paragraph: Partner with us
+  - link "YCS partner portal":
+    - /url: ////ycs.agoda.com
+  - link "Partner Hub":
+    - /url: //partnerhub.agoda.com/
+  - link "Advertise on Agoda":
+    - /url: //partnerhub.agoda.com/advertising-solutions/
+  - link "Affiliates":
+    - /url: ////partners.agoda.com/index.html
+  - link "Agoda API Documentation":
+    - /url: //developer.agoda.com/
+  - paragraph: Get the app
+  - link "iOS app":
+    - /url: //app.appsflyer.com/id440676901?pid=direct&c=hotel_page_footer&af_siteid=1716632&site_id=1716632&af_sub1=desktop
+  - link "Android app":
+    - /url: //app.appsflyer.com/com.agoda.mobile.consumer?pid=direct&c=hotel_page_footer&af_siteid=1716632&site_id=1716632&af_sub1=desktop
+  - paragraph: All material herein © 2005–2025 Agoda Company Pte. Ltd. All Rights Reserved.
+  - paragraph: Agoda is part of Booking Holdings Inc., the world leader in online travel & related services.
+```

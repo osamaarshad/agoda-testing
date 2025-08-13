@@ -18,8 +18,7 @@ export class AgodaPage extends BasePage {
     this.input = page.locator('.SearchBoxTextEditor');
     this.suggestions = page.locator('li[data-selenium="autosuggest-item"]');
     this.checkinDate = page.locator(`[data-selenium-date="${TestData.checkInDate}"]`);
-  this.checkoutDate = page.locator(
-  `[data-selenium="checkOutBox"][data-date="${TestData.checkOutDate}"]`);
+  this.checkoutDate = page.locator(`[data-selenium-date="${TestData.checkOutDate}"]`);
     this.plusButton = page.locator('[data-selenium="plus"]').nth(2);
     this.checkinText = page.locator('.SearchBoxTextDescription__title').nth(0);
     this.checkoutText = page.locator('.SearchBoxTextDescription__title').nth(1);
